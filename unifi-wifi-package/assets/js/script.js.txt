@@ -1,0 +1,13 @@
+let selectedPackage = '';
+
+function selectPackage(packageName) {
+    selectedPackage = packageName;
+    document.querySelector('.package-selection').style.display = 'none';
+    document.getElementById('user-form').style.display = 'block';
+}
+
+document.getElementById('userForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    document.getElementById('user-form').style.display = 'none';
+    document.getElementById('payment-details').style.display = 'block';
+});

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unifi WiFi Package Selection</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Choose Your Unifi WiFi Package</h1>
+        <div class="package-selection">
+            <div class="package">
+                <img src="assets/images/100mbps.jpg" alt="100Mbps">
+                <h3>100Mbps</h3>
+                <p>Original Price: RM 99</p>
+                <p class="price">Current Price: RM 89</p>
+                <button onclick="selectPackage('100Mbps')">Select</button>
+            </div>
+            <div class="package">
+                <img src="assets/images/300mbps.jpg" alt="300Mbps">
+                <h3>300Mbps</h3>
+                <p>Original Price: RM 139</p>
+                <p class="price">Current Price: RM 129</p>
+                <button onclick="selectPackage('300Mbps')">Select</button>
+            </div>
+            <div class="package">
+                <img src="assets/images/500mbps.jpg" alt="500Mbps">
+                <h3>500Mbps</h3>
+                <p>Original Price: RM 159</p>
+                <p class="price">Current Price: RM 149</p>
+                <button onclick="selectPackage('500Mbps')">Select</button>
+            </div>
+            <div class="package">
+                <img src="assets/images/1gbps.jpg" alt="1Gbps">
+                <h3>1Gbps</h3>
+                <p>Original Price: RM 249</p>
+                <p class="price">Current Price: RM 239</p>
+                <button onclick="selectPackage('1Gbps')">Select</button>
+            </div>
+        </div>
+        
+        <div id="user-form" class="form-container">
+            <h2>Enter Your Information</h2>
+            <form id="userForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="id">ID Number:</label>
+                <input type="text" id="id" name="id" required>
+
+                <button type="submit">Next</button>
+            </form>
+        </div>
+
+        <div id="payment-details" class="payment-info" style="display: none;">
+            <h3>Payment Details</h3>
+            <p>Bank: Maybank</p>
+            <p>Account Number: 162021951722</p>
+            <p>If you have any questions, contact customer service:</p>
+            <p>Telegram: 0198673193</p>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
